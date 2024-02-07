@@ -34,24 +34,19 @@
 	        let ending_num = parseInt(document.querySelector("#end").value);
 	        let output_html = "<div>While Loop</div>";
 
-			while(current_num <= ending_num) {
-
-				output_html += "<div>Current = " + current_num + "</div>";
-
-				// increase current num by 1 
-				current_num++;
-
-			}
 
 	        document.querySelector("#result").innerHTML = output_html;
+		}
 
-	    }
 	
         function for_example() {
             let ending_num = parseInt(document.querySelector("#end").value);
             var output_html = "<div>For Loop (ignores start value)</div>";
             
-            
+            for(let i = 0; i < ending_num; i++) {
+
+				output_html += "<div> current = " + i + "</div>";
+			}
 			
             document.querySelector("#result").innerHTML = output_html;    
 
