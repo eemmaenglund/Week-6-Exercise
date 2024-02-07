@@ -52,10 +52,17 @@
 
 		}
 
+		const artists = ["Illenium", "MJ", "Deadmouse", "Mura Masa"];
+
 	    function foreach_example() {
 	        let current_num = parseInt(document.querySelector("#start").value);
 	        let ending_num = parseInt(document.querySelector("#end").value);
 	        let output_html = "<div>Foreach Loop</div>";
+
+			artists.forEach( function (artist) {
+
+				output_html += "<div>One of my fav artists is " + artist + "! They Rule! </div>";
+			});
 
 
 	        document.querySelector("#result").innerHTML = output_html;
